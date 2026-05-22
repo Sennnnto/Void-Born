@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://m1r2dagcxbc0"
+path="res://.godot/imported/Footsteps - Fast.wav-fb8ded1204e353f48f79595c877327ff.sample"
+
+[deps]
+
+source_file="res://Audio/Horror Sound Pack/SFX/Footsteps - Fast.wav"
+dest_files=["res://.godot/imported/Footsteps - Fast.wav-fb8ded1204e353f48f79595c877327ff.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dj7h5mlcxjtjx"
+path="res://.godot/imported/Eerie Loop.wav-4fb4291c282b4077a1b71f8d3c565c93.sample"
+
+[deps]
+
+source_file="res://Audio/Horror Sound Pack/Music/Eerie Loop.wav"
+dest_files=["res://.godot/imported/Eerie Loop.wav-4fb4291c282b4077a1b71f8d3c565c93.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

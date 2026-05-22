@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://drfeetbktmu2x"
+path="res://.godot/imported/universfield-horror-background-atmosphere-156462.wav-f1020146585e9a13faddc3569b05113b.sample"
+
+[deps]
+
+source_file="res://Scenes/Audio/Horror Sound Pack/Music/universfield-horror-background-atmosphere-156462.wav"
+dest_files=["res://.godot/imported/universfield-horror-background-atmosphere-156462.wav-f1020146585e9a13faddc3569b05113b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://b0p47j0msjlmh"]
+
+[ext_resource type="AudioStream" uid="uid://dpu3nsuh27vxw" path="res://Audio/Ambiance.ogg" id="1_jc4qs"]
+[ext_resource type="AudioStream" uid="uid://bhdt7pd8us4cb" path="res://Audio/thellywellyn-horror-ambience-3-303646.ogg" id="2_20v21"]
+[ext_resource type="AudioStream" uid="uid://c4g1kqf3nqmn2" path="res://Scenes/Audio/Horror Sound Pack/Music/alesiadavina-horror-ambience-seamless-loop-the-lurking-within-148626.wav" id="2_tvfft"]
+[ext_resource type="AudioStream" uid="uid://drfeetbktmu2x" path="res://Scenes/Audio/Horror Sound Pack/Music/universfield-horror-background-atmosphere-156462.wav" id="3_7cjf4"]
+[ext_resource type="AudioStream" uid="uid://ccjnh7ihqi33x" path="res://Scenes/Audio/PortalEnter.wav" id="3_oynyb"]
+[ext_resource type="AudioStream" uid="uid://cqr8x42f0o8t5" path="res://Scenes/Audio/Horror Sound Pack/Music/floraphonic-short-punchy-sine-wave-ding-10-a-211748.wav" id="4_muqha"]
+[ext_resource type="AudioStream" uid="uid://d37aisdd3ovov" path="res://Scenes/Audio/Horror Sound Pack/Music/floraphonic-short-punchy-sine-wave-ding-23-a-211740.wav" id="5_7fg5s"]
+[ext_resource type="AudioStream" uid="uid://ck6wes7212pia" path="res://Scenes/Audio/alphix-game-over-417465 (1).wav" id="6_bc7xm"]
+[ext_resource type="AudioStream" uid="uid://6266w6t8o7h4" path="res://Scenes/Audio/Horror Sound Pack/SFX/freesound_community-ghost-says-the-words-game-over-32172 (1).wav" id="7_bc7xm"]
+
+[node name="SoundManager" type="Control" unique_id=464916750]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="SoundMenu" type="AudioStreamPlayer" parent="." unique_id=1232785040]
+stream = ExtResource("1_jc4qs")
+
+[node name="WorldThree" type="AudioStreamPlayer" parent="." unique_id=354174974]
+stream = ExtResource("2_tvfft")
+
+[node name="WorldOne" type="AudioStreamPlayer" parent="." unique_id=1148281579]
+stream = ExtResource("3_7cjf4")
+
+[node name="WorldTwo" type="AudioStreamPlayer" parent="." unique_id=1246271223]
+stream = ExtResource("2_20v21")
+
+[node name="PortalEnter" type="AudioStreamPlayer" parent="." unique_id=841740628]
+stream = ExtResource("3_oynyb")
+
+[node name="EnterButton" type="AudioStreamPlayer" parent="." unique_id=118226251]
+stream = ExtResource("4_muqha")
+volume_db = -7.0
+
+[node name="QuitButton" type="AudioStreamPlayer" parent="." unique_id=1758540653]
+stream = ExtResource("5_7fg5s")
+volume_db = -7.0
+
+[node name="EnterConfirm" type="AudioStreamPlayer" parent="." unique_id=1023264977]
+stream = ExtResource("4_muqha")
+volume_db = 2.0
+pitch_scale = 0.92
+bus = &"Echo"
+
+[node name="QuitConfirm" type="AudioStreamPlayer" parent="." unique_id=995877947]
+stream = ExtResource("5_7fg5s")
+volume_db = 2.0
+pitch_scale = 0.88
+bus = &"Echo"
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="." unique_id=811180929]
+stream = ExtResource("6_bc7xm")
+volume_db = 2.0
+pitch_scale = 0.9
+
+[node name="GameOver" type="AudioStreamPlayer" parent="." unique_id=925147283]
+stream = ExtResource("7_bc7xm")

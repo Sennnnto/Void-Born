@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bcvmmwrofyg0p"
+path="res://.godot/imported/Eerie Sound.wav-ffafc3958689f500fb5d18bd4883dc74.sample"
+
+[deps]
+
+source_file="res://Scenes/Audio/Horror Sound Pack/SFX/Eerie Sound.wav"
+dest_files=["res://.godot/imported/Eerie Sound.wav-ffafc3958689f500fb5d18bd4883dc74.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

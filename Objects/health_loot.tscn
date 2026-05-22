@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://djwcomwsdglpu"]
+
+[ext_resource type="Script" uid="uid://b0tsxmpu7e0qs" path="res://Scripts/health_loot.gd" id="1_m7h4i"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jvf1d"]
+size = Vector3(1.5, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m7h4i"]
+albedo_color = Color(0.5825001, 0.2629081, 0.22372603, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6qx7d"]
+size = Vector3(1, 0.5, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_clq7d"]
+size = Vector3(1, 1.5, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6u8u8"]
+albedo_color = Color(0.58431375, 0.2627451, 0.22352941, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jlvdo"]
+size = Vector3(0.5, 1, 0.5)
+
+[node name="HealthLoot" type="Area3D" unique_id=1456295770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 4)
+script = ExtResource("1_m7h4i")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=982333162]
+shape = SubResource("BoxShape3D_jvf1d")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D" unique_id=1301333481]
+transform = Transform3D(0.97761285, 0, 0, 0, 0.6578313, 0, 0, 0, 0.86849475, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_m7h4i")
+mesh = SubResource("BoxMesh_6qx7d")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=169474147]
+shape = SubResource("BoxShape3D_clq7d")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D2" unique_id=385503311]
+material_override = SubResource("StandardMaterial3D_6u8u8")
+mesh = SubResource("BoxMesh_jlvdo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

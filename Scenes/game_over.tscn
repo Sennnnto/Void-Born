@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://mbou2jes7j1l"]
+
+[ext_resource type="Script" uid="uid://ccxqekc5okw8r" path="res://Scripts/game_over.gd" id="1_8fo1c"]
+[ext_resource type="FontFile" uid="uid://c0434vxprarik" path="res://Main Menu BG/beyond_wonderland/Beyond Wonderland.ttf" id="2_ek8ke"]
+[ext_resource type="Texture2D" uid="uid://bi3wvltq4e1ij" path="res://Main Menu BG/reset.png" id="3_j3ryr"]
+[ext_resource type="Texture2D" uid="uid://de3jb8y1jxjft" path="res://Main Menu BG/restart.png" id="4_rjluv"]
+[ext_resource type="Texture2D" uid="uid://cb3u0afotbxkg" path="res://Main Menu BG/mainmen.png" id="5_gjtdd"]
+[ext_resource type="Texture2D" uid="uid://cc8xqturqfxw6" path="res://Main Menu BG/mainmenu.png" id="6_uylih"]
+
+[node name="GameOver" type="Control" unique_id=293362052]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 802.0
+offset_bottom = 501.0
+script = ExtResource("1_8fo1c")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=382988263]
+layout_mode = 0
+offset_left = -117.00003
+offset_top = -13.999998
+offset_right = 1032.0
+offset_bottom = 638.0
+scale = Vector2(3.336207, 2.7730036)
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1401576952]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 123.000015
+offset_right = 1058.0
+offset_bottom = 291.0
+scale = Vector2(3.336207, 3.2930033)
+theme_override_fonts/font = ExtResource("2_ek8ke")
+theme_override_font_sizes/font_size = 150
+text = "You Died.."
+
+[node name="Button" type="TextureButton" parent="." unique_id=495374655]
+layout_mode = 0
+offset_left = 1479.0
+offset_top = 840.0
+offset_right = 1851.0
+offset_bottom = 1020.0
+scale = Vector2(4.1190453, 3.407876)
+texture_normal = ExtResource("3_j3ryr")
+texture_hover = ExtResource("4_rjluv")
+
+[node name="Button2" type="TextureButton" parent="." unique_id=1138154898]
+layout_mode = 0
+offset_left = 74.999985
+offset_top = 856.0
+offset_right = 447.0
+offset_bottom = 1036.0
+scale = Vector2(3.336207, 3.2930038)
+texture_normal = ExtResource("5_gjtdd")
+texture_hover = ExtResource("6_uylih")
+
+[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_retry_pressed"]
+[connection signal="mouse_entered" from="Button2" to="." method="_on_button_2_mouse_entered"]
+[connection signal="pressed" from="Button2" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_main_menu_2_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bj3eah8rj3bup"]
+
+[ext_resource type="AudioStream" uid="uid://dq83y3hvkaxan" path="res://Audio/Horror Sound Pack/Music/Less Dark Ambient - Loopable.wav" id="1_wrh0v"]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" unique_id=1246689876]
+stream = ExtResource("1_wrh0v")
+autoplay = true

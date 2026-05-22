@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d37aisdd3ovov"
+path="res://.godot/imported/floraphonic-short-punchy-sine-wave-ding-23-a-211740.wav-66c859d2a80fe889dd462c13b72dffe1.sample"
+
+[deps]
+
+source_file="res://Scenes/Audio/Horror Sound Pack/Music/floraphonic-short-punchy-sine-wave-ding-23-a-211740.wav"
+dest_files=["res://.godot/imported/floraphonic-short-punchy-sine-wave-ding-23-a-211740.wav-66c859d2a80fe889dd462c13b72dffe1.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
